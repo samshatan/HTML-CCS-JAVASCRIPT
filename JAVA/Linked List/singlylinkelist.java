@@ -7,6 +7,7 @@ public class singlylinkelist {
 
     static Node head = null;
     static Node end = null;
+    
     public static void insertAtBeginning(int val){
         Node node = new Node();
         node.data = val;
