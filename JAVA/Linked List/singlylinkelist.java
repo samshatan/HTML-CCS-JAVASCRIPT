@@ -70,7 +70,7 @@ public class singlylinkelist {
             fast = fast.next.next;
             slow = slow.next;
         }
-        System.out.println(slow.data);
+        System.out.println("Middle Element is "+ slow.data);
     }
 
     public static void print(){
@@ -88,6 +88,8 @@ public class singlylinkelist {
         insertAtLast(90);
         insertAtLast(89);
         insertAtLast(100);
+        print();
+        System.out.println();
         insertAfterSpecificPoint(10,43);
         insertBeforeSpecificPoint(20, 10);
         deleteNode(20);
