@@ -1,3 +1,4 @@
+import java.util.Stack;
 
 class mystack<T>{
     T[] stack;
@@ -46,12 +47,29 @@ class mystack<T>{
 
 public class newstack {
     public static void main(String[] args) {
-        mystack<Integer> count = new mystack<>(5);
-        count.newpush(34);
-        count.newpush(54);
-        count.newpush(64);
-        count.display();
-        System.out.println(count.newpop());
-        System.out.println(count.newpeek());
+        // mystack<Integer> count = new mystack<>(5);
+        // count.newpush(34);
+        // count.newpush(54);
+        // count.newpush(64);
+        // count.display();
+        // System.out.println(count.newpop());
+        // System.out.println(count.newpeek());
+        int arr[] = {1,2,3,4,5};
+        Stack<Integer> count = new Stack<>();
+        for(int i=0; i<arr.length; i++)
+        {
+            count.push(arr[i]);
+        }
+        System.out.println(count);
+        System.out.println(count.peek());
+        for(int i=0; i<arr.length; i++)
+        {
+            arr[i] = count.pop();
+        }
+        System.out.println(count);
+        for(int i=0; i<arr.length; i++)
+        {
+            System.out.println(arr[i]);
+        }
     }
 }
