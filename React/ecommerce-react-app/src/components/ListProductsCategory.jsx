@@ -1,17 +1,15 @@
 import ProductCategory from "./ProductCategory";
-
+import productCategories from "../data/product-category";
 
 const ListProductsCategory = () =>{
     return (
         <>
-            <section class="categories">
+            <section className="categories">
                 <h1>Shop by Category</h1>
-                <div class="categories-grid">
-                    <ProductCategory productsCategoryDetails ={{name: 'Men', image: ''}}/>
-                    <ProductCategory productsCategoryDetails ={{name: 'Women', image: ''}}/>
-                    <ProductCategory productsCategoryDetails ={{name: 'Kids', image: ''}}/>
-                    <ProductCategory productsCategoryDetails ={{name: 'Home', image: ''}}/>
-                    <ProductCategory productsCategoryDetails ={{name: 'Beauty', image: ''}}/>
+                <div className="categories-grid">
+                    {productCategories.map((productCategory, index) => (
+                        <ProductCategory key= {index} productsCategoryDetails = {productCategory}/>
+                    ))}
                 </div>
             </section>
         </>
