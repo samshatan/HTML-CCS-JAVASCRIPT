@@ -21,6 +21,7 @@ import { useEffect, useState } from 'react';
 
 const ProductList = () => {
   let [productList, setProductList] = useState([]);
+  let [searchBar, setSearchBar] = useState('');
 
   const fetchData = async () => {
     const response = await fetch(
@@ -43,9 +44,18 @@ const ProductList = () => {
     setProductList(productList);
   }
 
+  function handleSearchClothes(){
+    productList = productList.filter((product) => product.name.toLowerCase().includes(searchBar.toLowerCase()));
+    setProductList(productList);
+  }
+
   return (
     <section className='products'>
       <h1>Trending Products</h1>
+      <div>
+        <input type="search" placeholder="Search for products..." value={searchBar} onChange={(ele) => setSearchBar(ele.target.value)} />
+        <button onClick={handleSearchClothes}>Search Filter</button>
+      </div>
       <button onClick={handleFilterButtonClick} className='filter-button'>
         Filter Top Rated Products
       </button>

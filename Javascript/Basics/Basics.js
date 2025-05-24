@@ -321,6 +321,58 @@
 // let arrr = arr.filter(num => num%2 === 0).map(num => num-1);
 // console.log(arrr);
 
-let arr = [24,45,67,2,3,4,5,7,8,9]
-let sum = arr.filter(num => num%2 === 0).map(num => num-1).reduce((prev, curr)=> prev+curr);
+// let arr = [24,45,67,2,3,4,5,7,8,9]
+// let sum = arr.filter(num => num%2 === 0).map(num => num-1).reduce((prev, curr)=> prev+curr);
+// console.log(sum);
+
+var regionInformation =[
+  [{
+    name : 'Sydney',
+    population : 10000,
+    temp : 6.0,
+    currency : 'USD'},
+  {
+    name : 'New York',
+    population : 10000,
+    temp : 2.0,
+    currency : 'USD'},
+    {
+    name : 'Boston',
+    population : 10000,
+    temp : 13.0,
+    currency : 'USD'},],
+  [{
+    name : 'Manhannttan',
+    population : 10000,
+    temp : 12.0,
+    currency : 'USD'},
+    null,
+    {
+    name : 'San francisco',
+    population : 10000,
+    temp : 8.0,
+    currency : 'USD'},],
+  [
+    null,
+    {
+    name : 'Seattle',
+    population : 10000,
+    temp : 4.0,
+    currency : 'USD'},
+    null,
+  ]
+]
+
+let sum = 0;
+for(let i=0;i<regionInformation.length;i++){
+  for(let j=0;j<regionInformation[i].length;j++){
+    if(regionInformation[i][j] !=null && regionInformation[i][j].temp<=10){
+      sum+=regionInformation[i][j].population;
+    }
+  }
+}
 console.log(sum);
+
+let totalPop = 0;
+regionInformation.forEach((ele)=> ele.filter((city)=> city!=null && city.temp<=10).forEach((city)=> totalPop+=city.population));
+console.log(totalPop);
