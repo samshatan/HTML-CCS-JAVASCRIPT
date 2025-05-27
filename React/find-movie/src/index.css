@@ -9,7 +9,7 @@ main{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* background-image: url('/React/find-movie/src/background.png'); */
+    background-image: url('../public/blur background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

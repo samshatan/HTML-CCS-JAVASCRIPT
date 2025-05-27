@@ -24,7 +24,7 @@ const sectionDetails =[
     name : 'K-Drama'
   },
   {
-    name : 'C-drama'
+    name : 'C-Drama'
   },
   {
     name : 'Anime'

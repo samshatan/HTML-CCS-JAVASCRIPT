@@ -1,8 +1,6 @@
 import MovieList from "./MovieList";
-import movieList from "../data/movie-list";
 function MovieSection(props){
   const {name} = props.sectionDetailsList;
-  const moviesToDisplay = movieList;
   return(
     <>
       <div class="text">
@@ -10,11 +8,43 @@ function MovieSection(props){
         </div>
       <div class="image">
         <ul>
-        {
-          moviesToDisplay.map((movie,index) =>(
-            <MovieList key ={index} movieDetailsList ={movie}/>
-          ))
+        {/* {
+          name==="All"? <MovieList title= {name}/>: null
         }
+        {
+          name==="Latest"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Popular"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Horror"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Sci-fi"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Romantic"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Comedy"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Popular"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="K-Drama"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="C-Drama"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Anime"? <MovieList title= {name}/>: null
+        }
+        {
+          name==="Cartoon"? <MovieList title= {name}/>: null
+        } */}
+        <MovieList title= {name}/>
         </ul>
       </div>
     </>
