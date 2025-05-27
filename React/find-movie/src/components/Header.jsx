@@ -1,7 +1,8 @@
 function Header(){
+  const image = process.env.PUBLIC_URL + "/logo.png";
   return(
     <div class="two">
-      <img src="/logo.png" alt=""/>
+      <img src={image} alt=""/>
       <a href="/Main Body/try.html">Home</a>
       <a href="#popular">Popular</a>
       

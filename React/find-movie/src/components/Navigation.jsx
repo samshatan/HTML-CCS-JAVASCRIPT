@@ -1,4 +1,19 @@
-function Navigation(){
+import React, { useState } from 'react';
+import movies from '../data/movie-list.js';
+
+function Navigation() {
+
+    const [genre, setGenre] = useState("All");
+
+    function handleGenreChange(event) {
+        setGenre(event.target.value);
+    };
+
+    const filterMovie = movies.filter((movie)=> {
+        return movie.genre === genre || genre === "All";
+    });
+    
+    
   return (
     <nav>
       <a href="#all">All</a>
@@ -7,7 +22,7 @@ function Navigation(){
       <a href="#anime">Anime</a>
       <div class="filters">
           <p>Genre</p>
-          <select id="genre">
+          <select id="genre" onChange={handleGenreChange}>
               <option>All</option>
               <option>Horror</option>
               <option>Sci-fi</option>

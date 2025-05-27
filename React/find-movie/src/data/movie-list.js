@@ -104,7 +104,7 @@ const movieListLatest = [
   },
   {
     name: "Bhool Bhulaiyaa 3",
-    image: "https://assets-in.bmscdn.com/discovery-catalog/events/et00353996-cpbypudxwl-portrait.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/en/e/e4/Bhool_Bhulaiyaa_3_poster.jpg",
     link: "https://en.wikipedia.org/wiki/Bhool_Bhulaiyaa_3"
   },
   {
@@ -601,7 +601,7 @@ const movieListkDramaSeries = [
   },
   {
     name: "Crash Landing on You",
-    image: "https://m.media-amazon.com/images/M/MV5BZjM2ZGQ4ZTMtOTNjMS00NmJlLTljMWUtNWExMzJhMGJlMWNiXkEyXkFqcGc@._V1_.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/en/6/64/Crash_Landing_on_You_main_poster.jpg",
     link: "https://en.wikipedia.org/wiki/Crash_Landing_on_You"
   },
   {
@@ -700,7 +700,7 @@ const movieListAnime = [
     },
     {
         name: "Chainsaw Man",
-        link: "https://rareanimes.me/chainsaw-man-season-1-censored-hindi-episodes-download-crunchyroll/",
+        link: "https://upload.wikimedia.org/wikipedia/en/2/24/Chainsawman.jpg",
         image: "https://funkygraphix.co.uk/cdn/shop/products/ChainsawMan_2022_v6A3_1000x.jpg?v=1681293792"
     },
     {
@@ -750,7 +750,7 @@ const movieListAnime = [
     },
     {
         name: "Alya Sometimes Hides Her Feelings in Russian",
-        link: "https://rareanimes.me/alya-sometimes-hides-her-feelings-in-russian-season-1-hindi-dubbed-episodes-download-hd/",
+        link: "https://upload.wikimedia.org/wikipedia/en/5/59/Roshidere_light_novel_volume_1_cover.jpg",
         image: "https://m.media-amazon.com/images/M/MV5BNjg0YTVjNTItZTI1ZC00MDZlLTg5MTMtZmM5MjUzN2IxN2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
     },
     {
