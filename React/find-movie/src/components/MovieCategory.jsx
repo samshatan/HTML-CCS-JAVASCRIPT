@@ -5,7 +5,7 @@ function MovieCategory(){
   return (
     <div id="movielist">
       <section>
-        <div class="moviestable">
+        <div className="moviestable">
           {
             sectionDetails.map((movieSection,index)=>(
               <MovieSection key={index} sectionDetailsList = {movieSection}/>

@@ -20,7 +20,7 @@ function Navigation() {
       <a href="#comedy">Comedy</a>
       <a href="#latest">Latest</a>
       <a href="#anime">Anime</a>
-      <div class="filters">
+      <div className="filters">
           <p>Genre</p>
           <select id="genre" onChange={handleGenreChange}>
               <option>All</option>

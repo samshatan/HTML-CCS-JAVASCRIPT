@@ -4,6 +4,7 @@ import Header from './components/Header';
 import './App.css';
 import Navigation from './components/Navigation';
 import MovieCategory from './components/MovieCategory';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <Navigation/>
     <MovieCategory/>
+    <Footer/>
     </>
   );
 }

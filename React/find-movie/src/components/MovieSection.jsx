@@ -3,10 +3,10 @@ function MovieSection(props){
   const {name} = props.sectionDetailsList;
   return(
     <>
-      <div class="text">
+      <div className="text">
         <a href="">{name}</a>
         </div>
-      <div class="image">
+      <div className="image">
         <ul>
         {/* {
           name==="All"? <MovieList title= {name}/>: null
