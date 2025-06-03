@@ -8,9 +8,9 @@ function Footer(){
         <div>
             <ul type="none" id="item1">
               <li>Company</li><br/>
-              <li><a href="aboutus.html" target="_blank">About</a></li>
-              <li><a href="customer.html" target="_blank">Contact Us</a></li>
-              <li><a href="customer.html" target="_blank">Customer Support</a></li>
+              <li><a href="/about" target="">About</a></li>
+              <li><a href="/customersupport" target="">Contact Us</a></li>
+              <li><a href="/customersupport" target="">Customer Support</a></li>
             </ul>
         </div>
         <div>

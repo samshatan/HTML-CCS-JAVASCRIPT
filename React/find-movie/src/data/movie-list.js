@@ -73,7 +73,7 @@ const movieListAll = [
     name: "Stree 2",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DiL7I-eBgSzcPcdaxezuaBLyRkk_kowa3sXv6I5DBLHk799OWxLR1tgRzNvyADFmRMg&usqp=CAU",
     link: "https://en.wikipedia.org/wiki/Stree_2"
-  }
+  },
 ];
 
 const movieListLatest = [
@@ -626,225 +626,225 @@ const movieListkDramaSeries = [
   }
 ];
 const movieListCDramaSeries  = [
-    {
-        name: "Our Secret",
-        link: "https://www.amazon.in/minitv/tp/d9cf0355-7c06-42b1-bf07-d9210758747d",
-        image: "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Our_Secret_%28TV_series%29_official_poster.jpg/220px-Our_Secret_%28TV_series%29_official_poster.jpg"
-    },
-    {
-        name: "Hidden Love",
-        link: "https://en.wikipedia.org/wiki/Hidden_Love_(TV_series)",
-        image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Hidden_Love_2023_TV_series.jpg/220px-Hidden_Love_2023_TV_series.jpg"
-    },
-    {
-        name: "Put Your Head On My Shoulder",
-        link: "https://en.wikipedia.org/wiki/Put_Your_Head_on_My_Shoulder_(TV_series)",
-        image: "https://images.justwatch.com/poster/179758857/s718/put-your-head-on-my-shoulder.jpg"
-    },
-    {
-        name: "My Girlfriend is an Alien",
-        link: "https://en.wikipedia.org/wiki/My_Girlfriend_Is_an_Alien",
-        image: "https://images.justwatch.com/poster/145380584/s718/my-girlfriend-is-an-alien.jpg"
-    },
-    {
-        name: "Falling Into Your Smile",
-        link: "https://en.wikipedia.org/wiki/Falling_into_Your_Smile",
-        image: "https://m.media-amazon.com/images/M/MV5BZDQxNDIxOTctNjcwOC00ZDFhLTk4ZTEtNjQ1ZTVmMDk5YmZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-        name: "Exclusive Fairytale",
-        link: "https://www.imdb.com/name/tt28513615/",
-        image: "https://media.senscritique.com/media/000021536043/0/exclusive_fairy_tale.png"
-    },
-    {
-        name: "I Belong to Your World",
-        link: "https://www.imdb.com/name/tt27655047/",
-        image: "https://image.tmdb.org/t/p/original/AlFUXp1jorpHacbyIWnhIM3qQ6I.jpg"
-    },
-    {
-        name: "Love Between Fairy and Devil",
-        link: "https://en.wikipedia.org/wiki/Love_Between_Fairy_and_Devil",
-        image: "https://i.mydramalist.com/xJDEr_4f.jpg"
-    },
-    {
-        name: "19th Floor",
-        link: "https://www.imdb.com/name/tt30836097/",
-        image: "https://m.media-amazon.com/images/M/MV5BODAxZDExODktNGE5MS00OGRkLWEwMDItZjQ3MjM3ODMyN2YzXkEyXkFqcGc@._V1_.jpg"
-    },
-    {
-        name: "When I Fly Towards You",
-        link: "https://en.wikipedia.org/wiki/When_I_Fly_Towards_You",
-        image: "https://m.media-amazon.com/images/M/MV5BZThhMzJiZDQtMGE3Yi00NDc1LWFhZDgtOWUwYTAyNDJlNTNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-    }
+  {
+      name: "Our Secret",
+      link: "https://www.amazon.in/minitv/tp/d9cf0355-7c06-42b1-bf07-d9210758747d",
+      image: "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Our_Secret_%28TV_series%29_official_poster.jpg/220px-Our_Secret_%28TV_series%29_official_poster.jpg"
+  },
+  {
+      name: "Hidden Love",
+      link: "https://en.wikipedia.org/wiki/Hidden_Love_(TV_series)",
+      image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Hidden_Love_2023_TV_series.jpg/220px-Hidden_Love_2023_TV_series.jpg"
+  },
+  {
+      name: "Put Your Head On My Shoulder",
+      link: "https://en.wikipedia.org/wiki/Put_Your_Head_on_My_Shoulder_(TV_series)",
+      image: "https://images.justwatch.com/poster/179758857/s718/put-your-head-on-my-shoulder.jpg"
+  },
+  {
+      name: "My Girlfriend is an Alien",
+      link: "https://en.wikipedia.org/wiki/My_Girlfriend_Is_an_Alien",
+      image: "https://images.justwatch.com/poster/145380584/s718/my-girlfriend-is-an-alien.jpg"
+  },
+  {
+      name: "Falling Into Your Smile",
+      link: "https://en.wikipedia.org/wiki/Falling_into_Your_Smile",
+      image: "https://m.media-amazon.com/images/M/MV5BZDQxNDIxOTctNjcwOC00ZDFhLTk4ZTEtNjQ1ZTVmMDk5YmZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+      name: "Exclusive Fairytale",
+      link: "https://www.imdb.com/name/tt28513615/",
+      image: "https://media.senscritique.com/media/000021536043/0/exclusive_fairy_tale.png"
+  },
+  {
+      name: "I Belong to Your World",
+      link: "https://www.imdb.com/name/tt27655047/",
+      image: "https://image.tmdb.org/t/p/original/AlFUXp1jorpHacbyIWnhIM3qQ6I.jpg"
+  },
+  {
+      name: "Love Between Fairy and Devil",
+      link: "https://en.wikipedia.org/wiki/Love_Between_Fairy_and_Devil",
+      image: "https://i.mydramalist.com/xJDEr_4f.jpg"
+  },
+  {
+      name: "19th Floor",
+      link: "https://www.imdb.com/name/tt30836097/",
+      image: "https://m.media-amazon.com/images/M/MV5BODAxZDExODktNGE5MS00OGRkLWEwMDItZjQ3MjM3ODMyN2YzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+      name: "When I Fly Towards You",
+      link: "https://en.wikipedia.org/wiki/When_I_Fly_Towards_You",
+      image: "https://m.media-amazon.com/images/M/MV5BZThhMzJiZDQtMGE3Yi00NDc1LWFhZDgtOWUwYTAyNDJlNTNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  }
 ];
 const movieListAnime = [
-    {
-        name: "Kimetsu no Yaiba (Demon Slayer)",
-        link: "https://rareanimes.me/demon-slayer-season-1-episodes-hindi-dubbed-download-hd-jio-cinema/",
-        image: "https://cdn.moviefone.com/image-assets/895006/2yiDQCDj7hlq2SwLojV9xrFkCnr.jpg?d=360x540"
-    },
-    {
-        name: "Jujutsu Kaisen",
-        link: "https://rareanimes.me/jujutsu-kaisen-season-1-hindi-dubbed-episodes-download-fhd/",
-        image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
-    },
-    {
-        name: "Naruto Shippuden",
-        link: "https://rareanimes.me/naruto-shippuden-season-01-episodes-hindi-dubbed-download-hd/",
-        image: "https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-        name: "Solo Leveling",
-        link: "https://rareanimes.me/solo-leveling-season-1-hindi-dubbed-episodes-download-hd/",
-        image: "https://static.wixstatic.com/media/1cf3ac_6ea6668ada5d48fe95b269a9177c2e3e~mv2.png/v1/fill/w_480,h_720,al_c,lg_1,q_85/1cf3ac_6ea6668ada5d48fe95b269a9177c2e3e~mv2.png"
-    },
-    {
-        name: "Chainsaw Man",
-        link: "https://upload.wikimedia.org/wikipedia/en/2/24/Chainsawman.jpg",
-        image: "https://funkygraphix.co.uk/cdn/shop/products/ChainsawMan_2022_v6A3_1000x.jpg?v=1681293792"
-    },
-    {
-        name: "Spy x Family",
-        link: "https://rareanimes.me/spy-x-family-season-1-hindi-dubbed-episodes-download-hd/",
-        image: "https://m.media-amazon.com/images/I/81eVcxUwfRL._UF1000,1000_QL80_.jpg"
-    },
-    {
-        name: "Black Clover",
-        link: "https://rareanimes.me/black-clover-season-01-episodes-hindi-dubbed-download-hd/",
-        image: "https://m.media-amazon.com/images/M/MV5BZmZkZjNhMWMtM2U0Mi00MjdlLTk3NmMtMTMwZjgwOTJmODMzXkEyXkFqcGc@._V1_.jpg"
-    },
-    {
-        name: "Dragon Ball DAIMA",
-        link: "https://rareanimes.me/dragon-ball-daima-season-1-hindi-dubbed-subbed-episodes-download-hd/",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtC5P1iU_VvzHiSUJuVuQPzJKfFSLdgbMaI_XwryxmeaG3SCeZP1DKZCZZa8SkJw4LHA&usqp=CAU"
-    },
-    {
-        name: "One Piece",
-        link: "https://rareanimes.me/one-piece-season-01-episodes-hindi-tamil-telugu-dubbed-download-hd/",
-        image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/onepiecebig.png"
-    },
-    {
-        name: "Mashle: Magic and Muscles",
-        link: "https://rareanimes.me/mashle-magic-and-muscles-season-1-hindi-episodes-download/",
-        image: "https://m.media-amazon.com/images/M/MV5BMjMyNjg4MzItMGI3MS00MGVmLWE5MDMtODk4NjIyNzFlOWZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-        name: "The Daily Life of the Immortal King",
-        link: "https://rareanimes.me/the-daily-life-of-the-immortal-king-season-3-hindi-download-hd/",
-        image: "https://images.justwatch.com/poster/319839040/s718/season-4.jpg"
-    },
-    {
-        name: "Classroom of the Elite",
-        link: "https://www.crunchyroll.com/series/GRVN8MNQY/classroom-of-the-elite",
-        image: "https://m.media-amazon.com/images/M/MV5BMDg3MGVhNWUtYTQ2NS00ZDdiLTg5MTMtZmM5MjUzN2IxN2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-        name: "Blue Lock",
-        link: "https://rareanimes.me/blue-lock-season-1-hindi-dubbed-episodes-download-hd/",
-        image: "https://m.media-amazon.com/images/M/MV5BNWFlNmJkN2YtNGRiZS00NjExLTlmNmEtYzdiMTdiZmMzYzAwXkEyXkFqcGc@._V1_.jpg"
-    },
-    {
-        name: "My Hero Academia",
-        link: "https://rareanimes.me/my-hero-academia-all-seasons-and-movies-hindi-episodes-download-hd/",
-        image: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12793542_b_v13_ak.jpg"
-    },
-    {
-        name: "Alya Sometimes Hides Her Feelings in Russian",
-        link: "https://upload.wikimedia.org/wikipedia/en/5/59/Roshidere_light_novel_volume_1_cover.jpg",
-        image: "https://m.media-amazon.com/images/M/MV5BNjg0YTVjNTItZTI1ZC00MDZlLTg5MTMtZmM5MjUzN2IxN2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-        name: "Beyblade G-Revolution",
-        link: "https://rareanimes.me/beyblade-season-3-g-revolution-hindi-episodes-download-in-hd/",
-        image: "https://images.static-bluray.com/products/20/83436_1_large.jpg"
-    },
-    {
-        name: "My Unique Skill Makes Me OP even at Level 1",
-        link: "https://rareanimes.me/my-unique-skill-makes-me-op-even-at-level-1-hindi-dubbed-episodes-download-hd/",
-        image: "https://m.media-amazon.com/images/M/MV5BOTM4YWQzNGEtZTBiZi00NGIyLWE2NDQtMjcyYzM4NWFmN2Q2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-    }
+  {
+      name: "Kimetsu no Yaiba (Demon Slayer)",
+      link: "https://rareanimes.me/demon-slayer-season-1-episodes-hindi-dubbed-download-hd-jio-cinema/",
+      image: "https://cdn.moviefone.com/image-assets/895006/2yiDQCDj7hlq2SwLojV9xrFkCnr.jpg?d=360x540"
+  },
+  {
+      name: "Jujutsu Kaisen",
+      link: "https://rareanimes.me/jujutsu-kaisen-season-1-hindi-dubbed-episodes-download-fhd/",
+      image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
+  },
+  {
+      name: "Naruto Shippuden",
+      link: "https://rareanimes.me/naruto-shippuden-season-01-episodes-hindi-dubbed-download-hd/",
+      image: "https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+      name: "Solo Leveling",
+      link: "https://rareanimes.me/solo-leveling-season-1-hindi-dubbed-episodes-download-hd/",
+      image: "https://static.wixstatic.com/media/1cf3ac_6ea6668ada5d48fe95b269a9177c2e3e~mv2.png/v1/fill/w_480,h_720,al_c,lg_1,q_85/1cf3ac_6ea6668ada5d48fe95b269a9177c2e3e~mv2.png"
+  },
+  {
+      name: "Chainsaw Man",
+      link: "https://upload.wikimedia.org/wikipedia/en/2/24/Chainsawman.jpg",
+      image: "https://funkygraphix.co.uk/cdn/shop/products/ChainsawMan_2022_v6A3_1000x.jpg?v=1681293792"
+  },
+  {
+      name: "Spy x Family",
+      link: "https://rareanimes.me/spy-x-family-season-1-hindi-dubbed-episodes-download-hd/",
+      image: "https://m.media-amazon.com/images/I/81eVcxUwfRL._UF1000,1000_QL80_.jpg"
+  },
+  {
+      name: "Black Clover",
+      link: "https://rareanimes.me/black-clover-season-01-episodes-hindi-dubbed-download-hd/",
+      image: "https://m.media-amazon.com/images/M/MV5BZmZkZjNhMWMtM2U0Mi00MjdlLTk3NmMtMTMwZjgwOTJmODMzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+      name: "Dragon Ball DAIMA",
+      link: "https://rareanimes.me/dragon-ball-daima-season-1-hindi-dubbed-subbed-episodes-download-hd/",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtC5P1iU_VvzHiSUJuVuQPzJKfFSLdgbMaI_XwryxmeaG3SCeZP1DKZCZZa8SkJw4LHA&usqp=CAU"
+  },
+  {
+      name: "One Piece",
+      link: "https://rareanimes.me/one-piece-season-01-episodes-hindi-tamil-telugu-dubbed-download-hd/",
+      image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/onepiecebig.png"
+  },
+  {
+      name: "Mashle: Magic and Muscles",
+      link: "https://rareanimes.me/mashle-magic-and-muscles-season-1-hindi-episodes-download/",
+      image: "https://m.media-amazon.com/images/M/MV5BMjMyNjg4MzItMGI3MS00MGVmLWE5MDMtODk4NjIyNzFlOWZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+      name: "The Daily Life of the Immortal King",
+      link: "https://rareanimes.me/the-daily-life-of-the-immortal-king-season-3-hindi-download-hd/",
+      image: "https://images.justwatch.com/poster/319839040/s718/season-4.jpg"
+  },
+  {
+      name: "Classroom of the Elite",
+      link: "https://www.crunchyroll.com/series/GRVN8MNQY/classroom-of-the-elite",
+      image: "https://m.media-amazon.com/images/M/MV5BMDg3MGVhNWUtYTQ2NS00ZDdiLTg5MTMtZmM5MjUzN2IxN2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+      name: "Blue Lock",
+      link: "https://rareanimes.me/blue-lock-season-1-hindi-dubbed-episodes-download-hd/",
+      image: "https://m.media-amazon.com/images/M/MV5BNWFlNmJkN2YtNGRiZS00NjExLTlmNmEtYzdiMTdiZmMzYzAwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+      name: "My Hero Academia",
+      link: "https://rareanimes.me/my-hero-academia-all-seasons-and-movies-hindi-episodes-download-hd/",
+      image: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12793542_b_v13_ak.jpg"
+  },
+  {
+      name: "Alya Sometimes Hides Her Feelings in Russian",
+      link: "https://upload.wikimedia.org/wikipedia/en/5/59/Roshidere_light_novel_volume_1_cover.jpg",
+      image: "https://m.media-amazon.com/images/M/MV5BNjg0YTVjNTItZTI1ZC00MDZlLTg5MTMtZmM5MjUzN2IxN2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+      name: "Beyblade G-Revolution",
+      link: "https://rareanimes.me/beyblade-season-3-g-revolution-hindi-episodes-download-in-hd/",
+      image: "https://images.static-bluray.com/products/20/83436_1_large.jpg"
+  },
+  {
+      name: "My Unique Skill Makes Me OP even at Level 1",
+      link: "https://rareanimes.me/my-unique-skill-makes-me-op-even-at-level-1-hindi-dubbed-episodes-download-hd/",
+      image: "https://m.media-amazon.com/images/M/MV5BOTM4YWQzNGEtZTBiZi00NGIyLWE2NDQtMjcyYzM4NWFmN2Q2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  }
 ];
 const movieListCartoon = [
-    {
-        name: "Doremon",
-        link: "https://rareanimes.me/doraemon-all-movies-hindi-dubbed-download-hd/",
-        image: "https://i.pinimg.com/736x/71/ed/b4/71edb4ea498b56f845356f8c9915de3d.jpg"
-    },
-    {
-        name: "Shinchan",
-        link: "https://rareanimes.me/shinchan-all-movies-hindi-tamil-telugu-download-hd/",
-        image: "https://i.pinimg.com/736x/ea/de/93/eade9341cd3284a06c24487f2bd332b4.jpg"
-    },
-    {
-        name: "Oggy and The Cockroaches",
-        link: "https://rareanimes.me/oggy-and-the-cockroaches-season-1-hindi-episodes-download-hd/",
-        image: "https://m.media-amazon.com/images/M/MV5BNzY3ZDVhMDMtOWQ1NS00NDc2LWI2OGQtY2YxOTdjMDMxZjJiXkEyXkFqcGc@._V1_.jpg"
-    },
-    {
-        name: "Horrid Henry",
-        link: "https://rareanimes.me/horrid-henry-season-3-episodes-hindi-download-hd/",
-        image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYIfKk-MtxeuMcR4V4XEEorlVNM0I4aKm2sgUX_-s8ChMnbK86ToIjjnRUN5cl2SzxhaiVPw"
-    },
-    {
-        name: "Ben 10",
-        link: "https://rareanimes.me/ben-10-all-movies-hindi-tamil-telugu-dubbed-download-hd/",
-        image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCEQe9i7wojJ5WCuYDrv8okretbUzf_pKi6Se8a6pdcpVGHL391TcJFMhl1ECjMAqlTHr9zA"
-    },
-    {
-        name: "Chota Bheem",
-        link: "https://www.chhotabheem.com/",
-        image: "https://rukminim2.flixcart.com/image/850/1000/k070zgw0/poster/z/x/g/large-chhota-bheem-hd-poster-for-kids-multicolor-300gsm-matte-12-original-imafkyrk6gggsv7j.jpeg?q=90&crop=false"
-    },
-    {
-        name: "We Bare Bears",
-        link: "https://rareanimes.me/we-bare-bears-the-movie-2020-hindi-tamil-telugu-download-hd/",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTej7fhFUWrkOiR3--0gE3o350Ne9kwAL6GS4Gu0qOskTOvDLL4SSNxAXoqBYcUDV0GVqBX4A"
-    },
-    {
-        name: "Phineas and Ferb",
-        link: "https://rareanimes.me/phineas-and-ferb-all-movies-hindi-dubbed-download-hd/",
-        image: "https://m.media-amazon.com/images/I/71dG3jzachL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        name: "Haddi Mera Buddy",
-        link: "",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtq9IeB43rCC1jWjPy6h1LcmzrN7cvx8ZfTg&s"
-    },
-    {
-        name: "Noddy",
-        link: "",
-        image: "https://m.media-amazon.com/images/M/MV5BZmMyN2ZiY2EtMDJmNi00YTBiLTk1OTEtOWE3Y2Q2N2Y3N2VlXkEyXkFqcGc@._V1_QL75_UY281_CR11,0,190,281_.jpg"
-    },
-    {
-        name: "Oswald",
-        link: "",
-        image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPFB0d7NOCr0vx4SLNCKoxQUKiF-ZtXjHmsa6Kr2eUUcfvLj3MuPd-aaRF8VdU3ssvBTiv"
-    },
-    {
-        name: "Tom And Jerry",
-        link: "",
-        image: "https://m.media-amazon.com/images/I/71BT3dfJoKL.jpg"
-    },
-    {
-        name: "Motu Patlu",
-        link: "",
-        image: "https://image.tmdb.org/t/p/original/yY3l4uSvUek8uA7kVriEh7mHtcQ.jpg"
-    },
-    {
-        name: "Little Krishna",
-        link: "",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOjhbAYz5OIXavHrcYu_RjOYmwyoeU8JxPg&s"
-    },
-    {
-        name: "Peppa Pig",
-        link: "",
-        image: "https://image.tmdb.org/t/p/original/ycf1ZqisXs8ZCGmw0reD1pI2Zlp.jpg"
-    },
-    {
-        name: "The Powerpuff Girls",
-        link: "",
-        image: "https://www.redwolf.in/image/cache/catalog/designer-Images/themes/the-powerpuff-girls-artist-image-438x438.png?m=1687857143"
-    }
+  {
+      name: "Doremon",
+      link: "https://rareanimes.me/doraemon-all-movies-hindi-dubbed-download-hd/",
+      image: "https://i.pinimg.com/736x/71/ed/b4/71edb4ea498b56f845356f8c9915de3d.jpg"
+  },
+  {
+      name: "Shinchan",
+      link: "https://rareanimes.me/shinchan-all-movies-hindi-tamil-telugu-download-hd/",
+      image: "https://i.pinimg.com/736x/ea/de/93/eade9341cd3284a06c24487f2bd332b4.jpg"
+  },
+  {
+      name: "Oggy and The Cockroaches",
+      link: "https://rareanimes.me/oggy-and-the-cockroaches-season-1-hindi-episodes-download-hd/",
+      image: "https://m.media-amazon.com/images/M/MV5BNzY3ZDVhMDMtOWQ1NS00NDc2LWI2OGQtY2YxOTdjMDMxZjJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+      name: "Horrid Henry",
+      link: "https://rareanimes.me/horrid-henry-season-3-episodes-hindi-download-hd/",
+      image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYIfKk-MtxeuMcR4V4XEEorlVNM0I4aKm2sgUX_-s8ChMnbK86ToIjjnRUN5cl2SzxhaiVPw"
+  },
+  {
+      name: "Ben 10",
+      link: "https://rareanimes.me/ben-10-all-movies-hindi-tamil-telugu-dubbed-download-hd/",
+      image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCEQe9i7wojJ5WCuYDrv8okretbUzf_pKi6Se8a6pdcpVGHL391TcJFMhl1ECjMAqlTHr9zA"
+  },
+  {
+      name: "Chota Bheem",
+      link: "https://www.chhotabheem.com/",
+      image: "https://rukminim2.flixcart.com/image/850/1000/k070zgw0/poster/z/x/g/large-chhota-bheem-hd-poster-for-kids-multicolor-300gsm-matte-12-original-imafkyrk6gggsv7j.jpeg?q=90&crop=false"
+  },
+  {
+      name: "We Bare Bears",
+      link: "https://rareanimes.me/we-bare-bears-the-movie-2020-hindi-tamil-telugu-download-hd/",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTej7fhFUWrkOiR3--0gE3o350Ne9kwAL6GS4Gu0qOskTOvDLL4SSNxAXoqBYcUDV0GVqBX4A"
+  },
+  {
+      name: "Phineas and Ferb",
+      link: "https://rareanimes.me/phineas-and-ferb-all-movies-hindi-dubbed-download-hd/",
+      image: "https://m.media-amazon.com/images/I/71dG3jzachL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+      name: "Haddi Mera Buddy",
+      link: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtq9IeB43rCC1jWjPy6h1LcmzrN7cvx8ZfTg&s"
+  },
+  {
+      name: "Noddy",
+      link: "",
+      image: "https://m.media-amazon.com/images/M/MV5BZmMyN2ZiY2EtMDJmNi00YTBiLTk1OTEtOWE3Y2Q2N2Y3N2VlXkEyXkFqcGc@._V1_QL75_UY281_CR11,0,190,281_.jpg"
+  },
+  {
+      name: "Oswald",
+      link: "",
+      image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPFB0d7NOCr0vx4SLNCKoxQUKiF-ZtXjHmsa6Kr2eUUcfvLj3MuPd-aaRF8VdU3ssvBTiv"
+  },
+  {
+      name: "Tom And Jerry",
+      link: "",
+      image: "https://m.media-amazon.com/images/I/71BT3dfJoKL.jpg"
+  },
+  {
+      name: "Motu Patlu",
+      link: "",
+      image: "https://image.tmdb.org/t/p/original/yY3l4uSvUek8uA7kVriEh7mHtcQ.jpg"
+  },
+  {
+      name: "Little Krishna",
+      link: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOjhbAYz5OIXavHrcYu_RjOYmwyoeU8JxPg&s"
+  },
+  {
+      name: "Peppa Pig",
+      link: "",
+      image: "https://image.tmdb.org/t/p/original/ycf1ZqisXs8ZCGmw0reD1pI2Zlp.jpg"
+  },
+  {
+      name: "The Powerpuff Girls",
+      link: "",
+      image: "https://www.redwolf.in/image/cache/catalog/designer-Images/themes/the-powerpuff-girls-artist-image-438x438.png?m=1687857143"
+  }
 ];
 export default movieListAll;
 export {movieListLatest, movieListPopular, movieListhorrorMovies, movieListsciFiMovies, movieListromanceMovies, movieListcomedyMovies, movieListkDramaSeries, movieListCDramaSeries, movieListAnime, movieListCartoon};

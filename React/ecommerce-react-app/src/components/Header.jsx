@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 function Header() {
 
   // let buttonvalue = "Login";
   const [buttonvalue, setBtnValue] = useState('Login');
+
+  const onlineStatus = useOnlineStatus();
 
   function handleButton(){
     buttonvalue === 'Login' ? setBtnValue('Logout') : setBtnValue('Login');
@@ -18,7 +21,7 @@ function Header() {
 
   useEffect(() =>{
     console.log("Hello I m inside the useEffect()");
-  },[buttonvalue, buttonvalue2]);
+  },[buttonvalue]);
 
   useEffect(() =>{
     console.log("Hello I m inside the useEffect() wihtout dependency");
@@ -44,7 +47,7 @@ function Header() {
     <div className="header-right">
       <input type="search" placeholder="Search for products..." />
       <button onClick={handleButton} className="login-btn">{buttonvalue}</button>
-      <button onClick={handleButton2} className="login-btn">{buttonvalue2}</button>
+      <button onClick={handleButton2} className="login-btn">{onlineStatus? 'Online': 'Offline'}</button>
     </div>
   </header>
   )

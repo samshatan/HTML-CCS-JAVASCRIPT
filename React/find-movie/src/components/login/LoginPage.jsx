@@ -2,24 +2,24 @@ import Header from "../Header";
 
 function LoginPage(){
   return(
-    <>
+    <div className="backgrounding">
     <Header/>
-    <div class="login-cont">
+    <div class="login-contl">
         <h2>Login</h2>
-        <form id="login-form">
-            <div class="input-group">
+        <form id="login-forml">
+            <div class="input-groupl">
                 <p>Username:</p>
                 <input type="text" id="username"/>
             </div>
-            <div class="input-group">
+            <div class="input-groupl">
                 <p>Password:</p>
                 <input type="password" id="password"/>
             </div>
-            <a href="/Main Body/try.html"><input type="button" id="login-btn" value="Login"/></a>
-            <a href="/Registration Page/signin.html" class="link">Don't have an account? Sign up</a>
+            <a href="/"><input type="button" id="login-btnl" value="Login"/></a>
+            <a href="/registration" class="linkl">Don't have an account? Sign up</a>
         </form>
     </div>
-    </>
+    </div>
   )
 }
 export default LoginPage;

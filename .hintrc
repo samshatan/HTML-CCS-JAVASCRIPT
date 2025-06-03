@@ -16,6 +16,14 @@
       {
         "label": "off"
       }
-    ]
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ],
+    "disown-opener": "off",
+    "typescript-config/consistent-casing": "off"
   }
 }

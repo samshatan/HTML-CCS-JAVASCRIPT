@@ -3,17 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+#root{
+    width: 100%;
+    height: auto;
+    background-image: url('./assets/blur_background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 main{
     width: 100%;
     height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* background-image: url('../public/blur background.png'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.backgrounding{
+    height: 100vh;
+}
+
 .two{
     background-color: black;
     overflow: hidden;
@@ -26,7 +38,7 @@ main{
     margin-right: 16px;
     font-size: 17px;
 }
-.two a{
+.two a, .two button{
     float: left;
     display: block;
     color: rgb(255, 255, 255);
@@ -44,7 +56,7 @@ main{
     color: white;
     background-color: black;
 }
-.two a.right{
+.two a.right, .two button{
     float: right;
 }
 .two img{
@@ -56,7 +68,7 @@ nav {
     background-color: #030425;
     display: flex;
 }
-nav a,p{
+nav a,nav p{
     display: block;
     color: rgb(153, 146, 146);
     text-align: center;
@@ -160,7 +172,7 @@ nav button{
     margin-left: 20px;
     text-decoration: none;
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .image{
@@ -197,7 +209,7 @@ nav button{
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     text-decoration: none;
-    color: rgb(0, 0, 0);  
+    color: rgb(255, 255, 255);  
 }
 .image ul li a div{
     margin-left: 10px;
@@ -208,9 +220,9 @@ nav button{
 }
 
 
-/* Custormer Details*/
+/* Custormer Support*/
 
-.customer{
+.customersupport{
     width: auto;
     margin: 50px;
     padding: 30px;
@@ -220,7 +232,7 @@ nav button{
     border-radius: 10px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
-.customer h2{
+.customersupport h2{
     text-align: center;
 }
 
@@ -253,7 +265,7 @@ nav button{
 
 /* Login CSS */
 
-.login-cont {
+.login-contl {
     width: 300px;
     margin: 50px auto;
     padding: 20px;
@@ -264,20 +276,20 @@ nav button{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-cont h2 {
+.login-contl h2 {
     text-align: center;
 }
 
-.input-group {
+.input-groupl {
     margin-bottom: 20px;
 }
 
-.input-group p {
+.input-groupl p {
     display: block;
     margin-bottom: 10px;
 }
 
-.input-group input {
+.input-groupl input {
     width: 93%;
     height: 10px;
     padding: 14px;
@@ -285,7 +297,7 @@ nav button{
     border-radius: 5px;
 }
 
-#login-btn {
+#login-btnl {
     width: 100%;
     height: 40px;
     background-color: #0400ff;
@@ -297,11 +309,11 @@ nav button{
     cursor: pointer;
 }
 
-#login-btn:hover {
+#login-btnl:hover {
     background-color: #f8fff8;
     color: #000000;
 }
-.link {
+.linkl {
     color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
