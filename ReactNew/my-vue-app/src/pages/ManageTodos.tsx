@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Todo } from "../types/todo";
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
@@ -61,6 +61,15 @@ export default function ManageTodos() {
       todo.id === id ? { ...todo, status: 'Completed' } : todo
     ));
   }
+
+  async function fetchTodos() {
+    const response = await fetch('http://localhost:8080/todos');
+    const data: Todo[] = await response.json();
+    setTodos(data);
+  }
+  useEffect(()=>{
+    fetchTodos();
+  },[])
 
   return (
     <div className="flex flex-col md:flex-row gap-8 p-6 min-h-[80vh] bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">

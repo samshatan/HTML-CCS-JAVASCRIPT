@@ -13,11 +13,12 @@ function Header(){
       <img src="/logo.png" alt=""/>
       <a href="/">Home</a>
       <a href="/">Popular</a>
+      {/* <h1>&diamonds;</h1> */}
       
       <input type="text" placeholder="Search"/>
       <a href="/login" className="right">Login</a>
       <a href="/registration" className="right">Sign In</a>
-      <button onClick={registrationHandle}>{regHandle}</button>
+      {/* <button onClick={registrationHandle}>{regHandle}</button> */}
     </div>
   )
 } 

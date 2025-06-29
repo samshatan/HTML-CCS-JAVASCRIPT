@@ -8,10 +8,10 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Header />
-      <Navigation />
-      <MovieCategory />
-      <Footer />
+      <Header/>
+      <Navigation/>
+      <MovieCategory/>
+      <Footer/>
     </div>
   );
 }
