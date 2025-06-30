@@ -72,7 +72,7 @@ export default function ManageTodos() {
   },[])
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 p-6 min-h-[80vh] bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="flex flex-col md:flex-row gap-8 p-6 min-h-[80vh] bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 mt-15">
       {/* Left: Form */}
       <form className="md:w-1/2 bg-white rounded-xl shadow-lg p-8 flex flex-col gap-4" onSubmit={handleSubmit}>
         <h2 className="text-2xl font-bold mb-2">{editId ? "Edit Todo" : "Add Todo"}</h2>
