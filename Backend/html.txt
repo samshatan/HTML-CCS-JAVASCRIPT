@@ -1,0 +1,4 @@
+firstly build the application through maven
+parcle convet ts to js
+difference between application and libraray:-
+application can be run but library cant, libraray can import and use their function

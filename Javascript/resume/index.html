@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC XYZ Resume</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: #fff;
+      color: #222;
+      margin: 0;
+      padding: 0 0 40px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      padding: 40px 50px 30px 50px;
+      border-radius: 8px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: 2.3rem;
+      letter-spacing: 2px;
+      margin: 0;
+      font-weight: 500;
+    }
+    .header p {
+      margin: 2px 0 10px 0;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      font-size: 1rem;
+      margin-bottom: 18px;
+    }
+    .contact span, .contact a {
+      color: #222;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .section {
+      margin-top: 22px;
+    }
+    .section-title {
+      font-size: 1.18rem;
+      font-weight: 600;
+      border-bottom: 1px solid #bbb;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+      padding-bottom: 2px;
+    }
+    .edu-title {
+      font-weight: 600;
+      font-size: 1.07rem;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    .edu-details {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.98rem;
+      color: #444;
+    }
+    .edu-details .right {
+      text-align: right;
+      min-width: 120px;
+    }
+    .sub {
+      font-style: italic;
+      color: #666;
+      font-size: 0.97rem;
+    }
+    .skills-list, .cert-list, .proj-list, .intern-list, .extra-list {
+      margin: 0 0 0 18px;
+      padding: 0;
+      list-style: disc inside;
+    }
+    .skills-list span {
+      font-weight: 500;
+      color: #222;
+    }
+    .intern-list, .proj-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    .intern-list li, .proj-list li {
+      margin-bottom: 10px;
+    }
+    .intern-title, .proj-title {
+      font-weight: 600;
+      font-size: 1.01rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .intern-role {
+      font-style: italic;
+      font-size: 0.97rem;
+      color: #666;
+      margin-left: 2px;
+    }
+    .intern-date, .proj-date {
+      font-size: 0.97rem;
+      color: #666;
+      min-width: 120px;
+      text-align: right;
+    }
+    .intern-desc, .proj-desc {
+      margin: 0 0 0 12px;
+      font-size: 0.97rem;
+      color: #333;
+    }
+    .achieve {
+      font-style: italic;
+      color: #444;
+      margin-left: 8px;
+      font-size: 0.98rem;
+    }
+    .cert-list {
+      margin-left: 18px;
+      font-size: 0.97rem;
+    }
+    .extra-list {
+      margin-left: 18px;
+      font-size: 0.97rem;
+    }
+    .extra-role {
+      font-style: italic;
+      color: #666;
+      font-size: 0.97rem;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 18px 6px;
+      }
+      .header h1 {
+        font-size: 1.3rem;
+      }
+      .section-title {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Sana</h1>
+      <p>Ghaziabad, Uttar Pradesh</p>
+    </div>
+    <div class="contact">
+      <span><i class="fa-solid fa-phone"></i></span>7351516425
+      <span><i class="fa-solid fa-envelope"></i> sanasaifi@gmail.com</span>
+      <a href="https://linkedin.com/in/sanasaifi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/sanasaifi</a>
+      <a href="https://github.com/sanasaifi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github.com/sanasaifi</a>
+    </div>
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="edu-title">B.Tech in IT (AKTU)</div>
+      <div class="edu-details">
+        <span>ABES Engineering College</span>
+        <span class="right">Sep 2023 – July 2027<br><span class="sub">CGPA: ....</span></span>
+      </div>
+      <div class="edu-title">Class 12th (CBSE)</div>
+      <div class="edu-details">
+        <span>Kendriya Vidyalaya</span>
+        <span class="right">2022<br><span class="sub">90.0%</span></span>
+      </div>
+      <div class="edu-title">Class 10th (CBSE)</div>
+      <div class="edu-details">
+        <span>Kendriya Vidyalaya</span>
+        <span class="right">2020<br><span class="sub">92.8%</span></span>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <ul class="skills-list">
+        <li><span>Developer Tools:</span> IDLE, DBMS , MATLAB, Proteus, LT Spice</li>
+        <li><span>Skills:</span> React, C, Java, Html, CSS</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-title">Projects</div>
+      <ul class="proj-list">
+        <li>
+          <div class="proj-title">Find-Movie <span class="proj-date">May 2025</span></div>
+          <ul class="proj-desc">
+            <li>Developed a web application using React for movie discovery and recommendations</li>
+            <li>Integrated OMDB API for fetching movie data and implemented user authentication</li>
+          </ul>
+        </li>
+        <li>
+          <div class="proj-title">Weather Monitor <span class="proj-date">Jan 2025</span></div>
+          <ul class="proj-desc">
+            <li>Designed an IoT weather station that monitors room temperature and humidity using precision sensors</li>
+            <li>Utilized Blynk IoT platform to stream data to a mobile app</li>
+          </ul>
+        </li>
+        <li>
+          <div class="proj-title">Birthday Wisher <span class="proj-date">June 2025</span></div>
+          <ul class="proj-desc">
+            <li>Developed a birthday reminder application using Java that sends notifications to users</li>
+            <li>Implemented a user-friendly interface with options to add, edit, and delete birthdays</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-title">Certificates</div>
+      <ul class="cert-list">
+        <li>The Complete Python Developer <span class="sub">Oct 2024–Nov 2024</span></li>
+        <li>DBMS for Beginners <span class="sub">Jan 2025– Feb 2025</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
