@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 public class PaymentService {
 
   GooglePay gpay = new GooglePay();
-
   Phonepay ppay = new Phonepay();
 
   public String pay(String mode){
