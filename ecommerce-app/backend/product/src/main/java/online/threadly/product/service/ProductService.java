@@ -11,7 +11,6 @@ import online.threadly.product.model.Product;
 @Service
 public class ProductService {
   public List<Product> getAllProducts() {
-    // Logic to retrieve all products
     return List.of(
       new Product(UUID.randomUUID(), "Product 1", "Description 1", "product-1", new String[]{"image1.jpg"}, "Brand A", 10, 99.99, 4.5, 100, true, LocalDateTime.now()),
       new Product(UUID.randomUUID(), "Product 2", "Description 2", "product-2", new String[]{"image2.jpg"}, "Brand B", 5, 49.99, 4.0, 50, false, LocalDateTime.now()),
