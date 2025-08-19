@@ -3,10 +3,18 @@ package online.threadly.product.model;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Data;
+
+@Entity
 @Data
 public class Product {
 
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private UUID id;
   private String name;
   private String description;
@@ -19,6 +27,10 @@ public class Product {
   private int ratingcount;
   private Boolean isFeatured;
   private LocalDateTime createdAt;
+
+  public Product() {
+    
+  }
 
   public Product(UUID id, String name, String description, String slug, String[] images, String brand, int stock, Double price, Double rating, int ratingcount, Boolean isFeatured, LocalDateTime createdAt) {
     this.id = id;
