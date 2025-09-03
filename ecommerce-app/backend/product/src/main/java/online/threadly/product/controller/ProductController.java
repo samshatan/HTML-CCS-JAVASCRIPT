@@ -16,10 +16,10 @@ public class ProductController {
   @Autowired
   private ProductService productService;
 
-  // @GetMapping
-  // public String testProduct() {
-  //     return productService.getProducts();
-  // }
+//   @GetMapping
+//   public String testProduct() {
+//       return productService.getProducts();
+//   }
 
   @PostMapping
   public Product createProduct(@RequestBody Product product){

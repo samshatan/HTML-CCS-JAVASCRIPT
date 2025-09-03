@@ -1,0 +1,61 @@
+# version: '3.8'
+
+# services:
+#   product-service:
+#     image: samshatan/product-service
+#     container_name: product-service
+#     depends_on:
+#       - product-db
+#   product-db:
+#     image: postgres:16-alpine
+#     container_name: product-db
+#     environment: 
+#       POSTGRES_DATASOURCE_URL: jdbc:postgres://postgres:samko.1209@product-db:5432/practiceProductdb
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: samko.1209
+#       POSTGRES_DB: practiceProductdb
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       -product-db-data:/var/lib/postgresql/data
+
+# volumes:
+#   product-db-data:
+
+version: "3.8"
+
+services:
+  threadly-product-service:
+    image: aakashverma1124/threadly-product-service
+    container_name: threadly-product-service
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://threadly-product-db:5432/threadly-product-db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+    depends_on:
+      - threadly-product-db
+    networks:
+      - threadly-network
+
+  threadly-product-db:
+    image: postgres:16-alpine
+    container_name: threadly-product-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: threadly-product-db
+    ports:
+      - "5440:5432"
+    volumes:
+      - threadly-product-db-data:/var/lib/postgresql/data
+    networks:
+      - threadly-network
+
+volumes:
+  threadly-product-db-data:
+
+networks:
+  threadly-network:
+    driver: bridge

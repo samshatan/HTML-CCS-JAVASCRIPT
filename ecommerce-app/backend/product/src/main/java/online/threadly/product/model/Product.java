@@ -19,6 +19,7 @@ public class Product {
   private String name;
   private String description;
   private String slug;
+  // Consider using @ElementCollection or @Lob for images if needed
   private String[] images;
   private String brand;
   private int stock;
@@ -29,7 +30,7 @@ public class Product {
   private LocalDateTime createdAt;
 
   public Product() {
-    
+    // No-args constructor required by JPA
   }
 
   public Product(UUID id, String name, String description, String slug, String[] images, String brand, int stock, Double price, Double rating, int ratingcount, Boolean isFeatured, LocalDateTime createdAt) {
