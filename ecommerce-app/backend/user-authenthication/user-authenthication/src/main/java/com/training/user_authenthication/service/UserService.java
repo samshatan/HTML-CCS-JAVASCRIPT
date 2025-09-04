@@ -22,13 +22,8 @@ public class UserService {
       return userRepository.findByEmail(email);
   }
 
-  public User createUser(String name, String email, String password){
-    User user = new User();
-    user.setName(name);
-    user.setEmail(email);
-    user.setPassword(password);
-    return user.Repository.save(user);
-
-  }
+    public User create(User user) {
+        return userRepository.save(user);
+    }
 
 }

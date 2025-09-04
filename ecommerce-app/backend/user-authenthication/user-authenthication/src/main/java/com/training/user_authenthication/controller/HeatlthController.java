@@ -11,6 +11,6 @@ public class HeatlthController {
 
   @GetMapping
   public ResponseEntity<String> healthCheck(){
-    return ResponseEntity.ok("USer Aunthen");
+    return ResponseEntity.ok("User Authentication");
   }
 }
