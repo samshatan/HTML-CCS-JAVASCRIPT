@@ -57,6 +57,9 @@ public class User implements UserDetails {
     protected void onCreate(){
       System.out.println("User created ");
       this.createdAt = LocalDateTime.now();
+      if (this.role == null) {
+        this.role = Role.USER;
+    }
     }
 
   @Override
@@ -76,21 +79,21 @@ public class User implements UserDetails {
 
   @Override
   public boolean isAccountNonExpired() {
-      return false;
+      return true;
   }
 
   @Override
   public boolean isAccountNonLocked() {
-      return false;
+      return true;
   }
 
   @Override
   public boolean isCredentialsNonExpired() {
-      return false;
+      return true;
   }
 
   @Override
   public boolean isEnabled() {
-      return false;
+      return true;
   }
 }

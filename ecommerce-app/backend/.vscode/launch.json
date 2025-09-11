@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "UserAuthenticationServiceApplication",
+      "request": "launch",
+      "mainClass": "com.training.user_authenthication.UserAuthenticationServiceApplication",
+      "projectName": "user-authenthication"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-TrainingApplication<training>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.practice.training.TrainingApplication",
+      "projectName": "training",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
