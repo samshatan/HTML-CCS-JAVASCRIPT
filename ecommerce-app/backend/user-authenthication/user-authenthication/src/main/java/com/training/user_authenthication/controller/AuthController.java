@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.training.user_authenthication.dao.AuthResponse;
+import com.training.user_authenthication.dao.SignInRequest;
 import com.training.user_authenthication.dao.SignUpRequest;
 import com.training.user_authenthication.service.AuthService;
 
@@ -24,5 +25,10 @@ public class AuthController {
   public ResponseEntity<AuthResponse> registerUser(@RequestBody SignUpRequest signUpRequest){
     AuthResponse authResponse = authService.registerUser(signUpRequest);
     return ResponseEntity.ok(authResponse);
+  }
+
+  @PostMapping("/login")
+  public ResponseEntity<AuthResponse> loginUser(@RequestBody SignInRequest signInRequest){
+    return ResponseEntity.ok(authService.authenticate(signInRequest));
   }
 }
