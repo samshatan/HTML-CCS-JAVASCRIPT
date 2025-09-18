@@ -20,7 +20,6 @@ import io.jsonwebtoken.security.Keys;
 @Service
 public class JWTService {
 
-  // openssl rand -base64 64
   @Value("${application.security.jwt.secret-key}")
   private String secretKey;
 

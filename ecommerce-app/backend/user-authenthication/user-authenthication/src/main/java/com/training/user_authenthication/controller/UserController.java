@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.training.user_authenthication.dao.AuthResponse;
 import com.training.user_authenthication.model.User;
 import com.training.user_authenthication.service.UserService;
 
@@ -48,6 +47,7 @@ public class UserController {
   @PostMapping
   @PreAuthorize("hasRole('ADMIN')")
   public ResponseEntity<User> createUser(@RequestBody User user){
+    // AuthResponse aunteResponse = AuthService.registerUser(user);
     User createdUser = this.userService.create(user);
     return ResponseEntity.status(HttpStatus.CREATED).body(createdUser);
   }
