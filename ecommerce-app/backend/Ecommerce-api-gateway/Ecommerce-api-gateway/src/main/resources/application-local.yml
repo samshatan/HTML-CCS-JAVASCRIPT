@@ -1,0 +1,5 @@
+application:
+  security:
+    jwt:
+      secret-key: CWCGeY1l1ne/DVS6Xt9iycNI9LMmuFz9akesBJbQCmoKrtauWrMz4CfoDzn50zCtCAS0deEKzIpHReNB7pf88A==
+      expiration: 604800000
