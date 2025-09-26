@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   product-service:
     image: samshatan/product-service
@@ -21,7 +20,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: samko.1209
-      POSTGRES_DB: product-db
+      POSTGRES_DB: practiceProductdb
     ports:
       - "5440:5432"
     volumes:
@@ -49,7 +48,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: samko.1209
-      POSTGRES_DB: user-authentication-db
+      POSTGRES_DB: practiceUserAuthdb
     ports:
       - "5441:5432"
     volumes:
