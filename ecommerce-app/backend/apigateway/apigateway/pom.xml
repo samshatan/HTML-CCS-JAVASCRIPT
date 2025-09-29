@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.10</version>
+		<version>3.5.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ecommerce</groupId>
-	<artifactId>Ecommerce-api-gateway</artifactId>
+	<groupId>com.example.apigateway</groupId>
+	<artifactId>apigateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Ecommerce-api-gateway</name>
-	<description>Ecommerce API Gateway</description>
+	<name>Api gateway</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -33,13 +33,8 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.vmware.tanzu.springcloudgateway.extensions</groupId>
-			<artifactId>access-control</artifactId>
-			<version>${tanzu-scg-extensions.version}</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-gateway-server-webflux</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -74,6 +69,10 @@
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt-jackson</artifactId>
 				<version>0.12.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
