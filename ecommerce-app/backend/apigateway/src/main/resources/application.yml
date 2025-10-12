@@ -15,20 +15,48 @@ spring:
             locator:
               enabled: true
           routes:
+
+            - id: user-authentication-service-health-check
+              uri: lb://user-authentication-service
+              predicates:
+                - Path=/health
+              filters:
+                - StripPrefix=0
+            
             - id: user-authentication-service-public-routes
               uri: lb://user-authentication-service
               predicates:
                 - Path=/api/v1/auth/**
+              filters:
+                - StripPrefix=0
 
             - id: user-authentication-service-private-routes
               uri: lb://user-authentication-service
               predicates:
                 - Path=/api/v1/users/**
+              filters:
+                - StripPrefix=0
             
             - id: product-service-public-routes
               uri: lb://product-service
               predicates:
                 - Path=/api/v1/products/**
+              filters:
+                - StripPrefix=0
+            
+            - id: product-service-admin-routes
+              uri: lb://product-service
+              predicates:
+                - Path=/api/v1/admin/products
+              filters:
+                - StripPrefix=0
+            
+            - id: product-service-admin-routes-with-slash
+              uri: lb://product-service
+              predicates:
+                - Path=/api/v1/admin/products/**
+              filters:
+                - StripPrefix=0
 
 application:
   security:
