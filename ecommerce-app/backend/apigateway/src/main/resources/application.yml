@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: local
+  cloud:
+    gateway:
+      server:
+        webflux:
+          enabled: true
+          discovery:
+            locator:
+              enabled: true
+          routes:
+            - id: user-authentication-service-public-routes
+              uri: lb://user-authentication-service
+              predicates:
+                - Path=/api/v1/auth/**
+
+            - id: user-authentication-service-private-routes
+              uri: lb://user-authentication-service
+              predicates:
+                - Path=/api/v1/users/**
+            
+            - id: product-service-public-routes
+              uri: lb://product-service
+              predicates:
+                - Path=/api/v1/products/**
+
+application:
+  security:
+    jwt:
+      # Base64-encoded 32-byte key for HS256; replace for non-dev
+      secret-key: VGhpc0lzQURldkZha2VLZXlUaGF0SXMzMkJ5dGVzIQ==
+      expiration: 3600000
