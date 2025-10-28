@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.ordercart.order_and_cart_management.dto.AddToCartResponse;
 import com.ordercart.order_and_cart_management.dto.AddtoCartRequest;
+import com.ordercart.order_and_cart_management.exception.QuantityCannotBeZeroException;
 import com.ordercart.order_and_cart_management.model.Cart;
 import com.ordercart.order_and_cart_management.model.CartItems;
 import com.ordercart.order_and_cart_management.repository.CartItemRepository;
@@ -22,7 +23,7 @@ public class CartService {
 
   public AddToCartResponse addToCart(UUID userId, AddtoCartRequest request){
     if(request == null || request.getQuantity() <= 0){
-      throw new BadRequestException("Quantity must be greater than zero");
+      throw new QuantityCannotBeZeroException("Quantity must be greater than zero");
     }
 
     Cart cart = cartRepository.findByUserId(userId).orElseGet(() -> {
