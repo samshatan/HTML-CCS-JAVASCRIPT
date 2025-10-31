@@ -8,14 +8,11 @@ spring:
     active: local
   cloud:
     gateway:
-      server:
-        webflux:
+      discovery:
+        locator:
           enabled: true
-          discovery:
-            locator:
-              enabled: true
-          routes:
-
+          lower-case-service-id: true
+      routes:
             - id: user-authentication-service-health-check
               uri: lb://user-authentication-service
               predicates:
@@ -55,6 +52,13 @@ spring:
               uri: lb://product-service
               predicates:
                 - Path=/api/v1/admin/products/**
+              filters:
+                - StripPrefix=0
+
+            - id: order-and-cart-management-service-routes
+              uri: lb://order-and-cart-management
+              predicates:
+                - Path=/api/v1/cart/**
               filters:
                 - StripPrefix=0
 

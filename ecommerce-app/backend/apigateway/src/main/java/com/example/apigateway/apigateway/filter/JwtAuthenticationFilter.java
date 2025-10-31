@@ -41,6 +41,20 @@ public class JwtAuthenticationFilter implements GlobalFilter {
           return exchange.getResponse().setComplete();
         }
 
+        // String userId = jwtService.extractUserId(token);
+
+        // ServerWebExchange mutatedExchange = exchange.mutate()
+        //         .request(builder -> {
+        //             // Remove any client-sent X-USER-ID and set our trusted value
+        //             builder.headers(httpHeaders -> {
+        //                 httpHeaders.remove("X-USER-ID");
+        //                 if (userId != null) {
+        //                     httpHeaders.add("X-USER-ID", userId);
+        //                 }
+        //             });
+        //         })
+        //         .build();
+
         return chain.filter(exchange);
     }
   

@@ -35,7 +35,7 @@ public class User implements UserDetails {
   @Id
   @GeneratedValue(generator = "UUID")
   @Column(name = "id", updatable = false, nullable = false)
-  private UUID ID;
+  private UUID id;
 
   @Column(nullable=false)
   private String name;
@@ -100,4 +100,8 @@ public class User implements UserDetails {
   public boolean isEnabled() {
       return true;
   }
+
+    public Object getId() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

@@ -1,5 +1,6 @@
 package com.ordercart.order_and_cart_management.repository;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -11,4 +12,6 @@ import com.ordercart.order_and_cart_management.model.CartItems;
 @Repository
 public interface CartItemRepository extends JpaRepository<CartItems, UUID> {
   Optional<CartItems> findByCartIdAndProductId(UUID cartId, UUID productId);
+
+  List<CartItems> findAllByCartId(UUID cartId);
 }

@@ -1,5 +1,6 @@
 package com.practice.training.controller;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,4 +58,14 @@ public class ProductController {
         }
         return ResponseEntity.ok(new Response("Product fetch succesfully",product));
     }
+
+
+    @PostMapping("/products/bulk")
+    public ResponseEntity<List<Product>> getproductsByIds(@RequestBody List<UUID> productIds){
+        List<Product> products = productservice.getAllProductsByProductsIds(productIds);
+        // if(products==null){
+        //     return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new Response("Product not Found",null));
+        // }
+        return ResponseEntity.ok(products);
+    } 
 }
