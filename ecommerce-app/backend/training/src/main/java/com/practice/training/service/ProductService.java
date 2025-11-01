@@ -23,6 +23,18 @@ public class ProductService {
     private ProductRepository productRepository;
 
     public Product createProduct(Product product){
+        if (product == null) {
+            throw new BadRequestException("product payload is required");
+        }
+        if (product.getName() == null || product.getName().trim().isEmpty()) {
+            throw new BadRequestException("product name is required");
+        }
+        if (product.getPrice() == null || product.getPrice() < 0) {
+            throw new BadRequestException("product price must be >= 0");
+        }
+        if (product.getStock() != null && product.getStock() < 0) {
+            throw new BadRequestException("product stock must be >= 0");
+        }
         return productRepository.save(product);
     }
 

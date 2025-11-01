@@ -100,8 +100,4 @@ public class User implements UserDetails {
   public boolean isEnabled() {
       return true;
   }
-
-    public Object getId() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
 }

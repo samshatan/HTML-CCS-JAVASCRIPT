@@ -13,7 +13,7 @@ import com.example.apigateway.apigateway.service.JwtService;
 import reactor.core.publisher.Mono;
 
 @Component
-@Order
+@Order(1)
 public class JwtAuthenticationFilter implements GlobalFilter {
 
   private final JwtService jwtService;
@@ -25,7 +25,7 @@ public class JwtAuthenticationFilter implements GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String path = exchange.getRequest().getPath().toString();
-        if(path.startsWith("/api/v1/auth") || path.startsWith("/api/v1/products") || path.startsWith("/api/v1/admin/products") || path.startsWith("/health")  || path.startsWith("/api/v1/cart")){
+        if(path.startsWith("/api/v1/auth")){
           System.out.println(path);
           return chain.filter(exchange);
         }
@@ -57,7 +57,7 @@ public class JwtAuthenticationFilter implements GlobalFilter {
                 })
                 .build();
 
-        return chain.filter(exchange);
+        return chain.filter(mutatedExchange);
     }
   
 }

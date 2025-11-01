@@ -32,7 +32,6 @@ public class TreeConstruction {
     return ans;
   }
 
-
   private static List<List<Integer>> bfsInList(TreeNode root){
     List<List<Integer>> ans = new ArrayList<>();
     Queue<TreeNode> queue = new LinkedList<>();

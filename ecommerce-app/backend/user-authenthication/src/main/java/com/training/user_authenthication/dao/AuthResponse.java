@@ -2,11 +2,17 @@ package com.training.user_authenthication.dao;
 
 public class AuthResponse {
   private String jwtToken;
+  private String message;
 
   public AuthResponse() {}
 
   public AuthResponse(String jwtToken) {
     this.jwtToken = jwtToken;
+  }
+
+  public AuthResponse(String jwtToken, String message) {
+    this.jwtToken = jwtToken;
+    this.message = message;
   }
 
   public String getJwtToken() {
@@ -15,5 +21,13 @@ public class AuthResponse {
 
   public void setJwtToken(String jwtToken) {
     this.jwtToken = jwtToken;
+  }
+
+  public String getMessage() {
+    return message;
+  }
+
+  public void setMessage(String message) {
+    this.message = message;
   }
 }

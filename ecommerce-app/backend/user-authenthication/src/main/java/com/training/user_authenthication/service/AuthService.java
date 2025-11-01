@@ -48,6 +48,6 @@ public class AuthService {
     User user = userRepository.findByEmail(signInRequest.getEmail())
       .orElseThrow();
     String jwtToken = jwtService.generateToken(user);
-    return new AuthResponse(jwtToken);
+    return new AuthResponse(jwtToken, "Login successful");
   }
 }
