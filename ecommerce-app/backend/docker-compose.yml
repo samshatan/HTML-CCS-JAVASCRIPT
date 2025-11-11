@@ -1,6 +1,12 @@
-version: '3.8'
 services:
+
+  ####################################################
+  ######### product specific services starts #########
+  ####################################################
   product-service:
+    build:
+      context: ./training
+      dockerfile: Dockerfile
     image: samshatan/product-service
     container_name: product-service
     ports:
@@ -28,7 +34,18 @@ services:
     networks:
       - training-network
 
+  ####################################################
+  ########## product specific services ends ##########
+  ####################################################
+
+  ####################################################
+  ########## user specific services starts ###########
+  ####################################################
+
   user-authentication-service:
+    build:
+      context: ./user-authenthication
+      dockerfile: Dockerfile
     image: samshatan/user-authentication-service
     container_name: user-authentication-service
     ports:
@@ -56,7 +73,18 @@ services:
     networks:
       - training-network
 
+  ####################################################
+  ########### user specific services ends ###########
+  ####################################################
+
+  ####################################################
+  ####### order and cart specific services starts ####
+  ####################################################
+
   order-and-cart-management-service:
+    build:
+      context: ./order-and-cart-management
+      dockerfile: Dockerfile
     image: samshatan/order-and-cart-management-service
     container_name: order-and-cart-management-service
     ports:
@@ -78,11 +106,52 @@ services:
       POSTGRES_PASSWORD: samko.1209
       POSTGRES_DB: cartandorderdb
     ports:
-      - "5440:5432"
+      - "5442:5432"
     volumes:
       - order-and-cart-management-db-data:/var/lib/postgresql/data
     networks:
       - training-network
+    
+  ####################################################
+  ####### order and cart specific services ends #####
+  ####################################################
+
+  ####################################################
+  ############# service discovery starts #############
+  ####################################################
+
+  service-discovery:
+    build:
+      context: ./service-discovery
+      dockerfile: Dockerfile
+    image: samshatan/service-discovery
+    container_name: service-discovery
+    ports:
+      - "8761:8761"
+    networks:
+      - training-network
+
+  ####################################################
+  ############## service discovery ends ##############
+  ####################################################
+
+  ####################################################
+  ############# api gateway starts ###################
+  ####################################################
+
+  api-gateway:
+    build:
+      context: ./apigateway
+      dockerfile: Dockerfile
+    image: samshatan/api-gateway
+    ports:
+      - "8080:8080"
+    networks:
+      - training-network
+    
+  ####################################################
+  ############# api gateway ends #####################
+  ####################################################
 
 volumes:
   product-db-data:

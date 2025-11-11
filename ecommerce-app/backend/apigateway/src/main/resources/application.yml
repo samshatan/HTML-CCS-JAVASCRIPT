@@ -6,61 +6,65 @@ spring:
     name: api-gateway
   profiles:
     active: local
+  eureka:
+    instance:
+      prefer-ip-address: true
+      hostname: localhost
+      ip-address: 127.0.0.1
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
   cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
     gateway:
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
       routes:
-            - id: user-authentication-service-health-check
-              uri: lb://user-authentication-service
-              predicates:
-                - Path=/health
-              filters:
-                - StripPrefix=0
-            
-            - id: user-authentication-service-public-routes
-              uri: lb://user-authentication-service
-              predicates:
-                - Path=/api/v1/auth/**
-              filters:
-                - StripPrefix=0
+        - id: user-authentication-service-health-check
+          uri: lb://user-authentication-service
+          predicates:
+            - Path=/health
+          filters:
+            - StripPrefix=0
 
-            - id: user-authentication-service-private-routes
-              uri: lb://user-authentication-service
-              predicates:
-                - Path=/api/v1/users/**
-              filters:
-                - StripPrefix=0
-            
-            - id: product-service-public-routes
-              uri: lb://product-service
-              predicates:
-                - Path=/api/v1/products/**
-              filters:
-                - StripPrefix=0
-            
-            - id: product-service-admin-routes
-              uri: lb://product-service
-              predicates:
-                - Path=/api/v1/admin/products
-              filters:
-                - StripPrefix=0
-            
-            - id: product-service-admin-routes-with-slash
-              uri: lb://product-service
-              predicates:
-                - Path=/api/v1/admin/products/**
-              filters:
-                - StripPrefix=0
+        - id: user-authentication-service-public-routes
+          uri: lb://user-authentication-service
+          predicates:
+            - Path=/api/v1/auth/**
+          filters:
+            - StripPrefix=0
 
-            - id: order-and-cart-management-service-routes
-              uri: lb://order-and-cart-management
-              predicates:
-                - Path=/api/v1/cart/**
-              filters:
-                - StripPrefix=0
+        - id: user-authentication-service-private-routes
+          uri: lb://user-authentication-service
+          predicates:
+            - Path=/api/v1/users/**
+          filters:
+            - StripPrefix=0
+
+        - id: product-service-public-routes
+          uri: lb://product-service
+          predicates:
+            - Path=/api/v1/products/**
+          filters:
+            - StripPrefix=0
+
+        - id: product-service-admin-routes-with-slash
+          uri: lb://product-service
+          predicates:
+            - Path=/api/v1/admin/products/**
+          filters:
+            - StripPrefix=0
+
+        - id: order-and-cart-management-service-routes
+          uri: lb://order-and-cart-management
+          predicates:
+            - Path=/api/v1/cart/**
+          filters:
+            - StripPrefix=0
 
 application:
   security:
