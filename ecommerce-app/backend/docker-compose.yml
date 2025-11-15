@@ -15,8 +15,13 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://product-db:5432/practiceProductdb
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: samko.1209
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-discovery:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
     depends_on:
       - product-db
+      - service-discovery
     networks:
       - training-network
   
@@ -54,8 +59,11 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://user-authentication-db:5432/practiceUserAuthdb
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: samko.1209
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-discovery:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
     depends_on:
       - user-authentication-db
+      - service-discovery
     networks:
       - training-network
 
@@ -93,8 +101,11 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://order-and-cart-management-db:5432/cartandorderdb
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: samko.1209
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-discovery:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
     depends_on:
       - order-and-cart-management-db
+      - service-discovery
     networks:
       - training-network
 
@@ -146,6 +157,11 @@ services:
     image: samshatan/api-gateway
     ports:
       - "8080:8080"
+    environment:
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-discovery:8761/eureka/
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+    depends_on:
+      - service-discovery
     networks:
       - training-network
     
